@@ -222,7 +222,7 @@ namespace CursachBot
                     heroModel hm = hc.GetHeroByNameAsync(messageInfo).Result;
                     if (hm.localized_name == "Hero not found")
                     {
-                        await botClient.SendTextMessageAsync(message.Chat.Id, "Hero not found! You can view hero names at /allHeroes");
+                        await botClient.SendTextMessageAsync(message.Chat.Id, "Hero not found! You can view hero names at /allheroes");
                     }
                     else
                     {
